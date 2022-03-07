@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela</title>
     <style>
+        *{
+            border: 0px;
+        }
         body{
             font-family: Arial, Helvetica, sans-serif;
+            
         }
         table{
             border-collapse: collapse;
@@ -18,6 +22,20 @@
             background-color: rgba(128, 128, 128, 0.747);
             color: white;
         }
+        tbody, th, td{
+            border: 1px solid black;
+            padding: 10px;
+            
+        }
+        .destaque{
+            background-color: rgba(128, 128, 128, 0.747);
+            color: white;
+            font-weight: bolder;
+            text-align: left;           
+        }
+        .numero{
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -27,7 +45,7 @@
                 <th rowspan="2">Área</th>
                 <th rowspan="2">Disciplinas</th>
                 <th colspan="2">Notas</th>
-                <th rowspan="2">Média</th>                
+                <th rowspan="2">Média</th>                  
             </tr>
             <tr>
                 <th>Nota 1</th>
@@ -35,11 +53,53 @@
             </tr>
         </thead>
         <tbody>
-            <th>Exatas</th>
+            <tr>
+                <th rowspan="4">Exatas</th>
+                <td>Matématica</td>
+                <td class="numero">5.0</td>
+                <td class="numero">5.0</td>
+                <td class="numero">5.0</td>
+            </tr>
+            <tr>
+                <td>Fisica</td>
+                <td class="numero">5.0</td>
+                <td class="numero">5.0</td>
+                <td class="numero">5.0</td>
+            </tr>
+            <tr>
+                <td>Quimica</td>
+                <td class="numero">5.0</td>
+                <td class="numero">5.0</td>
+                <td class="numero">5.0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td class="numero">5.0</td>
+                <td class="numero">5.0</td>
+                <td class="numero">5.0</td>
+            </tr>
+            <tr class="destaque">
+                <th colspan="4">Media de Exatas</th>
+                <td class="numero">5.0</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Humanas</th>
+                <td>Historia</td>
+                <td class="numero">5.0</td>
+                <td class="numero">5.0</td>
+                <td class="numero">5.0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td class="numero">5.0</td>
+                <td class="numero">5.0</td>
+                <td class="numero">5.0</td>
+            </tr>
+            <tr class="destaque">
+                <th colspan="4">Media de Humanas</th>
+                <td class="numero">5.0</td>
+            </tr>
         </tbody>
-        <tfoot>
-
-        </tfoot>
     </Table>
 </body>
 </html>
