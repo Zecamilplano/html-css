@@ -1,0 +1,2 @@
+por padrão  o iframe é 300x150
+solling="no" para desativar a barra horizontal
